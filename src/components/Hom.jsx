@@ -75,15 +75,14 @@ const SpeedTypingGame = () => {
       updateScore();
       e.target.value = '';
 
-      // Increase time based on difficulty
       setTime((prevTime) => {
         if (prevTime === 0) {
-          // end game
+        
           gameOver();
           return prevTime;
         }
 
-        return prevTime + 3; // Default difficulty is medium
+        return prevTime + 2;
       });
     }
   };
